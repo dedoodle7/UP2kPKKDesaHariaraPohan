@@ -6,6 +6,7 @@
     <title>Katalog UP2K PKK Desa Hariara Pohan</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <header>
@@ -222,10 +223,34 @@
 
     </div>
 </section>
+<section class="payment-section">
+    <div class="payment-card">
+        <h2>💳 Informasi Pembayaran</h2>
 
+        <div class="payment-info">
+            <p><strong>Nama Rekening</strong></p>
+            <h3>IRMAYANA TAMBA</h3>
+
+            <p><strong>Bank</strong></p>
+            <h3>Bank Sumut</h3>
+
+            <p><strong>Nomor Rekening</strong></p>
+            <h3 id="rekening">24402040019792</h3>
+
+            <button onclick="copyRekening()">
+                Salin Nomor Rekening
+            </button>
+        </div>
+    </div>
+</section>
 <footer>
     <p>© 2026 UP2K PKK Desa Hariara Pohan</p>
 </footer>
-
+<script>
+function copyRekening() {
+    navigator.clipboard.writeText("24402040019792");
+    alert("Nomor rekening berhasil disalin!");
+}
+</script>
 </body>
 </html>

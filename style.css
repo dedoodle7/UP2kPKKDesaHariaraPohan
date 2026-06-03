@@ -286,3 +286,67 @@ footer p{
         font-size:.65rem;
     }
 }
+
+.payment-section{
+    max-width:900px;
+    margin:0 auto 80px;
+    padding:0 25px;
+}
+
+.payment-card{
+    background:rgba(255,255,255,.85);
+    backdrop-filter:blur(15px);
+    border-radius:30px;
+    padding:40px;
+    text-align:center;
+
+    box-shadow:
+        0 15px 35px rgba(15,23,42,.08);
+
+    border:1px solid rgba(255,255,255,.5);
+}
+
+.payment-card h2{
+    margin-bottom:30px;
+    color:var(--dark);
+}
+
+.payment-info p{
+    color:#64748b;
+    margin-top:15px;
+}
+
+.payment-info h3{
+    font-size:1.4rem;
+    margin-top:5px;
+    color:var(--dark);
+}
+
+.payment-info #rekening{
+    font-size:2rem;
+    letter-spacing:2px;
+    color:var(--primary);
+    margin-bottom:20px;
+}
+
+.payment-info button{
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--secondary)
+    );
+
+    color:white;
+    border:none;
+    padding:14px 28px;
+    border-radius:999px;
+    cursor:pointer;
+    font-size:1rem;
+    font-weight:600;
+    transition:.3s;
+}
+
+.payment-info button:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 20px rgba(20,184,166,.3);
+}
